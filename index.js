@@ -18,7 +18,7 @@ app.use('/', routes);
 DBconnect();
 
 app.get('/', (req, res) => {
-    res.send('Welcome to MJManagement fuck fuck fuck .');
+    res.send('Welcome to MJManagement fuck fuck .');
 });
 
 app.listen(PORT, () => {
