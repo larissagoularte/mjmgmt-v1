@@ -23,7 +23,7 @@ app.use('/', routes);
 DBconnect();
 
 app.get('/', (req, res) => {
-    res.send('Welcome to MJManagement fuck fuck .');
+    res.send('Welcome to MJManagement.');
 });
 
 app.listen(PORT, () => {
