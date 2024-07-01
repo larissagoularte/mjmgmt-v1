@@ -8,10 +8,15 @@ const DBconnect = require('./db');
 const app = express(); 
 const PORT = process.env.PORT || 9000;
 
+const corsOptions = {
+    origin: 'http://localhost:3000',
+    optionsSuccessStatus: 200,
+};
+
 app.use(express.json());
-app.use(cors({
-    origin: 'http://localhost:3000'
-}));
+
+app.use(cors(corsOptions));
+
 
 app.use('/', routes);
 
